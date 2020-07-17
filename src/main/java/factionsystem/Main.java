@@ -117,7 +117,7 @@ public class Main extends JavaPlugin implements Listener {
     }
 
     @EventHandler()
-    public void onJoin(EntitySpawnEvent event) {
+    public void onSpawn(EntitySpawnEvent event) {
         EntitySpawnEventHandler handler = new EntitySpawnEventHandler(this);
         handler.handle(event);
     }
